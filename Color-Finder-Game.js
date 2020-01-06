@@ -77,7 +77,7 @@ function setUpSquares() {
         changeSquares();
         message.innerText = "CORRECT!";
         resetButton.innerText = "Play again?";
-		heading.style.background = pickedColor;
+	heading.style.backgroundColor = pickedColor;
 		
       } else {
         this.style.backgroundColor = '#232323';
