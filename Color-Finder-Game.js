@@ -5,7 +5,7 @@ let numColors,
     pickedColor;
 
 const colorDisplay = document.getElementById('color-display-inner'),
-	  heading = document.querySelector('.heading'),
+      heading = document.querySelector('.heading'),
       hintButton = document.querySelector('.btn-hint'),
       resetButton = document.querySelector('.btn-reset'),
       message = document.querySelector('.message'),
