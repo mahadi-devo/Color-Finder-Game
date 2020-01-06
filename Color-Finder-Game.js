@@ -5,6 +5,7 @@ let numColors,
     pickedColor;
 
 const colorDisplay = document.getElementById('color-display-inner'),
+	  heading = document.querySelector('.heading'),
       hintButton = document.querySelector('.btn-hint'),
       resetButton = document.querySelector('.btn-reset'),
       message = document.querySelector('.message'),
@@ -25,6 +26,7 @@ function init() {
   hintButton.innerText = "Hint?";
   resetButton.innerText = "New colors?";
   colorDisplay.innerText = pickedColor;
+  
   message.innerText = "";
 
   setUpSquares();
@@ -62,6 +64,7 @@ function setUpSquares() {
     if (colors[i]) {
       square.style.display = 'block';
       square.style.backgroundColor = colors[i];
+	 
     } else {
       square.style.display = 'none';      
     }
@@ -74,6 +77,8 @@ function setUpSquares() {
         changeSquares();
         message.innerText = "CORRECT!";
         resetButton.innerText = "Play again?";
+		heading.style.background = pickedColor;
+		
       } else {
         this.style.backgroundColor = '#232323';
         this.style.boxShadow = 'none';
